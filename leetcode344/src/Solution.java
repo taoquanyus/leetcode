@@ -10,6 +10,7 @@ public class Solution {
         }
     }
 
+
     public void reverseString1(char[] s) {//参考答案，更加简洁
         int n = s.length;
         for (int left = 0, right = n - 1; left < right; ++left, --right) {
@@ -18,5 +19,4 @@ public class Solution {
             s[right] = tmp;
         }
     }
-
 }
