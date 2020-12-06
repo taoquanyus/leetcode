@@ -1,13 +1,13 @@
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        int a=0;
-        {
-            System.out.println(a);
+        String s="anagram";
+        Queue<Character> queues = new PriorityQueue<>();
+        for (char c1 : s.toCharArray()) {
+            queues.add(c1);
         }
+        System.out.println(queues);
 
     }
 }
