@@ -13,7 +13,7 @@ public class Solution {
     public int minDiffInBST(TreeNode root){//我的代码，但结果不能实现，因为子二叉树不能调用父二叉树的值
             if(root==null) return Integer.MAX_VALUE;
             int diff=Math.abs(parent_value-root.val);
-            parent_value=root.val;
+            int parent_value=root.val;
             return Math.min(diff,Math.min(minDiffInBST(root.right),minDiffInBST(root.left)));
 
     }
@@ -39,5 +39,4 @@ public class Solution {
         //右子树
         inorder(root.right);
     }
-
 }
