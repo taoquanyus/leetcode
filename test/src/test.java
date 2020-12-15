@@ -2,10 +2,7 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        String a="a";
-        Character a1='a';
-        Character b='b';
-        Character b1='b';
-        Character c='f';
+        int a[][]=new int[][]{{1,2},{3,4}};
+        System.out.println(a[1][0]);
     }
 }
