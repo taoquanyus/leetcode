@@ -8,7 +8,7 @@ public class Solution {
         }
         return y==temp;
     }
-    //另一种更简单的suanfa
+    //另一种更简单的算法
 
     public boolean isPalindrome2(int x) {
         if (x < 0 || (x % 10 == 0 && x != 0)) {
