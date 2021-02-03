@@ -2,13 +2,10 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-
-        HashSet<Integer> hset = new HashSet<Integer>();
-        //add elements to HashSet
-        hset.add(1);
-        hset.add(2);
-        hset.add(3);
-        hset.add(4);
+        int[] nums=new int[]{1,2,3,4,2};
+        Arrays.sort(nums);
+        for(int num:nums)
+        System.out.println(num);
         // Displaying HashSet elements
         // Creating an Array
 //        int[] array =
