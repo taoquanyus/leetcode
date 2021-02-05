@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Solution {//终于AC了，真是不容易
     //和答案的算法相同，但是答案是分模块写的，swap和reverse都应该写成函数;
+    //reverse用while写更合适，非常简单！！！
     public static void main(String[] args) {
         int[] nums=new int[]{1,3,2};
         nextPermutation(nums);
