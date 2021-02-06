@@ -73,6 +73,8 @@ public class Solution {
     }
 
     //回溯法
+    //代码写得非常好，利用combine来传递，只有满足条件时才生成ans，这样能节省很多空间
+    //此外，非基本类型的参数传递是饮用传递.
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         List<Integer> combine = new ArrayList<Integer>();
