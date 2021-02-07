@@ -26,4 +26,13 @@ public class Solution {
         if(nums[0]!=nums[point]&&nums[nums.length-1]>nums[0]) return false;
         return true;
     }
+    //最简单的方法应该是当成环来处理
+    public static boolean check2(int[] nums) {
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]>nums[(i+1)% nums.length])count++;
+            if(count>1)return false;
+        }
+        return true;
+    }
 }
