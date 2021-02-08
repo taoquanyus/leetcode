@@ -1,18 +1,18 @@
-public class Solution {
+class Solution {
     public String multiply(String num1, String num2) {
         if (num1.equals("0") || num2.equals("0")) {
             return "0";
         }
         String ans = "0";
         int m = num1.length(), n = num2.length();
-        for (int i = n - 1; i >= 0; i--) {//第一位
+        for (int i = n - 1; i >= 0; i--) {
             StringBuffer curr = new StringBuffer();
             int add = 0;
             for (int j = n - 1; j > i; j--) {
                 curr.append(0);
             }
             int y = num2.charAt(i) - '0';
-            for (int j = m - 1; j >= 0; j--) {//第二位
+            for (int j = m - 1; j >= 0; j--) {
                 int x = num1.charAt(j) - '0';
                 int product = x * y + add;
                 curr.append(product % 10);
@@ -25,8 +25,7 @@ public class Solution {
         }
         return ans;
     }
-
-    public String addStrings(String num1, String num2) {//两数相加
+    public String addStrings(String num1, String num2) {
         int i = num1.length() - 1, j = num2.length() - 1, add = 0;
         StringBuffer ans = new StringBuffer();
         while (i >= 0 || j >= 0 || add != 0) {
