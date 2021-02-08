@@ -2,7 +2,9 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        String[] a=new String[]{"hello"};
+        char a='5';
+        int a1=Integer.valueOf(a);
+        System.out.println(a1);
     }
 
     private static void change(String[] a) {
