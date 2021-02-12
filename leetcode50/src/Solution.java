@@ -1,6 +1,6 @@
 public class Solution {
     public double myPow(double x, int n) {
-        //方法很巧妙
+        //方法很巧妙，快速幂
         long N = n;
         return N >= 0 ? quickMul(x, N) : 1.0 / quickMul(x, -N);
     }
