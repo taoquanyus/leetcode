@@ -27,7 +27,6 @@ public class Solution {
                 max=temp[1];
             }
         }
-
         return ans.toArray(new int[ans.size()][]);
     }
 }
