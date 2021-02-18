@@ -2,21 +2,21 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        String b="";
-        System.out.println("----------------------");
-        System.out.println(b=="");
-        System.out.println(b.isEmpty());
-        System.out.println(b.length());
-        String c;
-        System.out.println("----------------------");
-        String a=null;
-        System.out.println(a==null);
-        System.out.println(a.length());
-        System.out.println(a.isEmpty());
-//        System.out.println(c==null);
-//        System.out.println(c.isEmpty());
-//        System.out.println(c.length());
-
+        int[]matrix=new int[]{1};
+        int left=0,right=matrix.length-1;
+        int target=2;
+        int mid=0;
+        while(left<=right){
+            mid =left+(right-left)/2;
+            if(matrix[mid]<target){
+                left= mid +1;
+            }
+            if(matrix[mid]>target){
+                right= mid -1;
+            }
+        }
+        mid=left+(right-left)/2;
+        System.out.println(mid);
     }
 
 //    private static void change(String[] a) {
