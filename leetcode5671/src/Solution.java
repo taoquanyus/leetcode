@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 class Solution {
-//bfs
+//多源bfs
     public int[][] highestPeak(int[][] isWater) {
         int m = isWater.length, n = isWater[0].length,cnt=0,height=0;
         int[][] heights = new int[m][n];
