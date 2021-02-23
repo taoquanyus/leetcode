@@ -35,7 +35,9 @@ public class Solution {
         }
         return pre.next;
     }
-
+//参考答案
+    //链表的虽然是引用类型，但是small和smallHead都表示链表的指针
+    //如果small=small.next，表示名为small的指针指向了下一个，而无关smallHead的事
     public ListNode partition2(ListNode head, int x) {
         ListNode small = new ListNode(0);
         ListNode smallHead = small;

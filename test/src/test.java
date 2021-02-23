@@ -1,15 +1,31 @@
 import java.util.*;
 
 public class test {
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
     public static void main(String[] args) {
-        HashMap<int[],Integer> hashMap=new HashMap<>();
-        int[] temp=new int[]{1,2};
-        hashMap.put(temp,100);
-        int[] temp1=new int[]{1,2};
-        System.out.println(hashMap.containsKey(temp1));
+        ListNode a=new ListNode(0);
+        ListNode b=a;
+        a.next=new ListNode(2);
+        a.val=10;
+        System.out.println(a.val);
+        System.out.println(a);
+        System.out.println(b.val);
+        System.out.println(b);
+        a=a.next;
+        System.out.println(a.val);
+        System.out.println(a);
+        System.out.println(b.val);
+        System.out.println(b);
     }
 
 //    private static void change(String[] a) {
 //        a[0]="hello2";
 //    }
+
 }
