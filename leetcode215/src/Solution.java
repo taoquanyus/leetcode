@@ -8,6 +8,7 @@ public class Solution {
         for (int i = 0; i < k; i++) {
             arrays[i] = nums[i];
         }
+
         Arrays.sort(arrays);
         int length = nums.length;
         for (int i = k; i < length; i++) {
