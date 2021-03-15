@@ -9,8 +9,9 @@ public class test {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     public static void main(String[] args) {
-        int a=0XFF;
-        System.out.println(a);
+        String a="abcde";
+        String b=a.substring(0,2);
+        System.out.println(b);
     }
 
 //    private static void change(String[] a) {
