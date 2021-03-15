@@ -41,6 +41,7 @@ public class LRUCache {
             hashMap.remove(oldKey);
             queue.add(key);
             hashMap.put(key,value);
+
         }
     }
 }
